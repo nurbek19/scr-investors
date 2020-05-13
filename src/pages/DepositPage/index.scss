@@ -1,0 +1,170 @@
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 15px 80px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.deposit-instructions {
+  flex: 1;
+  padding-right: 30px;
+
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    line-height: 28px;
+  }
+
+  .transfer-wise-link {
+    width: 270px;
+    padding: 25px 0 40px;
+
+    .link-button a {
+      background-color: #FFD200;
+    }
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+}
+
+.deposit-steps {
+  margin: 0;
+  padding: 0;
+
+
+  li {
+    display: flex;
+    list-style: none;
+    padding-bottom: 30px;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #FFD200;
+      box-sizing: border-box;
+    }
+
+    p {
+      flex: 1;
+      padding: 6px 0 0 15px;
+
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+.bank-details {
+  width: 350px;
+  margin-top: 70px;
+  padding: 40px;
+  border: 2px solid #FFD200;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px 0;
+      border-bottom: 1px solid #D8D6DA;
+
+      span {
+        font-size: 14px;
+        color: #9E98A3;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 0;
+        padding-top: 5px;
+      }
+
+      .copy-icon {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+
+    .bank-details {
+      margin-top: 0;
+      border: 0;
+      padding: 40px 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

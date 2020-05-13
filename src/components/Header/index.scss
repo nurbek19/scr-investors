@@ -1,0 +1,56 @@
+header {
+  padding: 30px 0;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .sign-in-link {
+    position: relative;
+
+    &::after {
+      content: '';
+      background-color: #FFD200;
+      position: absolute;
+      right: -10px;
+      top: -6px;
+      width: 35px;
+      height: 35px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+
+    a {
+      position: relative;
+      font-size: 18px;
+      color: #000;
+      text-decoration: none;
+      z-index: 1;
+    }
+  }
+
+  .user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFD200;
+    box-sizing: border-box;
+    border-radius: 70px;
+    cursor: pointer;
+  }
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  margin-top: -2em;
+  transform-origin: left;
+  transform: scale(.7);
+}

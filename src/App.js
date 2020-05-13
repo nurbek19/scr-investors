@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import { renderRoutes } from 'react-router-config';
+import ROUTES from './routes';
+// import { connect } from 'react-redux';
+
+import Layout from './containers/Layout';
+import Routes from './rroutes';
+
+const allowedRoutes = user => {
+  return ROUTES.filter(route => (route.auth ? route.auth(user) : true)) || [];
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes/>
+    </Layout>
   );
 }
+
+// const mapStateToProps = state => ({
+//   // user: state.userStore.user
+// });
 
 export default App;

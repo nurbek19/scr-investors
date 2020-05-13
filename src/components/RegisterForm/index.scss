@@ -1,0 +1,47 @@
+.sign-up-form {
+  .social-register-links {
+    display: flex;
+    padding-bottom: 45px;
+
+    div {
+      padding-right: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .register-button {
+    height: 50px;
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
+  .privacy-policy {
+    font-size: 14px;
+    color: #9E98A3;
+    padding: 25px 0 40px;
+
+    a {
+      color: #9E98A3;
+    }
+  }
+
+  .sign-in-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+    }
+
+    button {
+      background-color: transparent;
+      width: 100px;
+      height: 50px;
+    }
+  }
+}

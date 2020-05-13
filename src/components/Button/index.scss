@@ -1,0 +1,15 @@
+.button {
+  background-color: #FFD200;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FFD200;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+  cursor: pointer;
+}
