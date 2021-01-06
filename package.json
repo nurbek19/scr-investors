@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@veriff/incontext-sdk": "^1.0.0",
     "@veriff/js-sdk": "^1.1.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "connected-react-router": "^6.8.0",
     "dotenv": "^8.2.0",
